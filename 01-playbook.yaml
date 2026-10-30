@@ -1,5 +1,5 @@
 - name : This play is for ping demo
-  hosts : all
+  hosts : local
   tasks :
     - name : ping all the hosts
       ping :
