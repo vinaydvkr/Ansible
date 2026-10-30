@@ -39,7 +39,7 @@
         msg: "This is Play 3 Task 1 Run 1"
 
     - name: Play 3 Task 2 Run 2
-      ansible.buildin.debug:
+      ansible.builtin.debug:
         msg: "This is Play 3 TAsk 2 Run 2"
 
     - name: Play3 TAsk 3 Run 3
