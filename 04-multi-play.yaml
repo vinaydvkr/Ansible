@@ -10,7 +10,7 @@
       ansible.builtin.debug:
         msg: "This is Play 1 Task 2 Run 2"
 
-    - name: Play  Task 3 Run 3
+    - name: Play 1 Task 3 Run 3
       ansible.builtin.debug:
         msg: "This is Play 1 Task 3 Run 3"
 
