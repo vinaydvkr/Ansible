@@ -1,0 +1,47 @@
+- name: Play 1 Task 1 Run 1
+  hosts: local
+  connection: local
+  tasks:
+    - name: Play 1 Task 1 Run 1
+      ansible.builtin.debug:
+        msg: "This is Play 1 Task 1 Run 1"
+    
+    - name: Play 1 Task 2 Run 2
+      ansible.builtin.debug:
+        msg: "This is Play 1 Task 2 Run 2"
+
+    - name: Play  Task 3 Run 3
+      ansible.builtin.debug:
+        msg: "This is Play 1 Task 3 Run 3"
+
+- name: Play 2 Task 1 Run 1
+  hosts: local
+  connection: local
+  tasks:
+    - name: Play 2 Task 1 Run 1
+      ansible.builtin.debug:
+        msg: "This is Play 2 Task 1 Run 1"
+
+    - name: Play 2 Task 2 Run 2
+      ansible.builtin.debug:
+        msg: "This is Play 2 Task 2 Run 2"
+
+    - name: Play 2 Task 3 Run 3
+      ansible.builtin.debug:
+        msg: "his is Play 2 Task 3 Run 3"
+
+- name: Play 3 Task 2 Run 1
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Play 3 Task 1 Run 1
+      ansible.builtin.debug:
+        msg: "This is Play 3 Task 1 Run 1"
+
+    - name: Play 3 Task 2 Run 2
+      ansible.buildin.debug:
+        msg: "This is Play 3 TAsk 2 Run 2"
+
+    - name: Play3 TAsk 3 Run 3
+      ansible.builtin.debug:
+        msg: "This is Play 3 Task 3 Run 3"
