@@ -1,0 +1,7 @@
+- name: This play is for demo on debug
+  hosts: localhosts
+  connection: local
+  tasks:
+    - name: debug the message
+      ansible.builtin.debug:
+        msg: "Welcome to Ansible demo"
