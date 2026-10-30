@@ -1,5 +1,5 @@
 - name: This play is for demo on debug
-  hosts: localhosts
+  hosts: local
   connection: local
   tasks:
     - name: debug the message
