@@ -1,11 +1,18 @@
 - name: demo on variables
   hosts: local
   connection: local
+  vars:
+    course: "DevSecOps"
+    trainer: Vinay Kumar Reddy DeReddy
+    duration: 5 months
   tasks:
-    vars:
-      course: "DevSecOps"
-      trainer: Vinay Kumar Reddy DeReddy
-      duration: 5 months
   - name: print the vars
-      ansible.builtin.debug:
-        msg: "I am learning {{ course }} trainer is  {{ trainer }} duration is {{ duraion }}"
+    ansible.builtin.debug:
+      msg: "I am learning {{ course }} trainer is  {{ trainer }} duration is {{ duraion }}"
+
+
+
+
+
+
+
