@@ -1,0 +1,15 @@
+- name: demo on task level vars
+  hosts: local
+  connection: local
+  vars:
+    property: "500 Acres"
+  tasks:
+  - name: Property of first son
+    ansible.builtin.debug:
+      msg: "My father gave me {{ property }} of property"
+      
+  - name: Property to second son 
+    vars:
+      property: "350 Acres"
+    ansible.builtin.debug:
+      msg: "My father gave me {{ property }} of property"
