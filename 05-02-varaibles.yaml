@@ -1,0 +1,13 @@
+- name: demo on variables
+  hosts: local
+  connection: local
+  vars:
+    vacation: Goa
+    Mode of travel: Flight
+    Number of Persons: 4
+    Number of Days: 5
+    Travel Agency: Pick an trip
+    tasks:
+      name: Demo on vars
+      ansible.builtin.debug:
+        msg: "Hello, I am going on vacation to {{ vacaion }} on {{ Flight }} number of people are {{ Number of Persons }} number of days we have planned is {{ Number of Days }} and the trave agency we have opted is {{ Travel Agency }}" 
