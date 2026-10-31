@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    - course.yaml
+  - course.yaml
 - name: Course details
   ansible.builtin.debug:
     msg: "My trainer name is {{ TrainerName }} course he is teaching is {{ Course }} and the duration of the course is {{ Course }}"
