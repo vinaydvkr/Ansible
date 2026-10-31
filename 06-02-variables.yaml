@@ -1,0 +1,23 @@
+- name: demo on task level vars
+  hosts: local
+  connection: local
+  vars:
+    citizen: Indian
+    DOB: 04-07-1991
+    PlaceOfBirth: Kurnool
+  tasks:
+  - name: citizen of which country
+    ansible.builtin.debug:
+      msg: "I am an {{ citizen }} citizen"
+  
+  - name: date of birth is
+    ansible.builtin.debug:
+      msg: "My date of birth is  {{ DOB }}"
+
+  - name: Place of birth
+    ansible.builtin.debug:
+      msg: "My place og birth is {{ PlaceOfBirth }}"
+
+  
+
+
