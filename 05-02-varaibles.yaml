@@ -3,10 +3,10 @@
   connection: local
   vars:
     vacation: Goa
-    Modeoftravel: Flight
-    Number of Persons: 4
-    Number of Days: 5
-    Travel Agency: Pick an trip
+    ModeOftravel: Flight
+    NumberOfPersons: 4
+    NumberOf Days: 5
+    TravelAgency: Pick an trip
     tasks:
       name: Demo on vars
       ansible.builtin.debug:
