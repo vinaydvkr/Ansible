@@ -1,0 +1,9 @@
+- name: variables form files
+  hosts: local
+  connection: local
+  vars_files:
+  - studentdetails.yaml
+  tasks:
+    -name: details fo the students
+    ansible.builtin.debug:
+      msg: " Name of the student is {{ studentname }} course opted is {{ course }} and base location is {{ location }}"
