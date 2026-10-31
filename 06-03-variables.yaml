@@ -1,0 +1,25 @@
+- name: demo on task level variables
+  hosts: local
+  connection: local
+  vars:
+    NameOfStudent: "Vinay Kumar Reddy DeReddy"
+    Qualification: "B.Tech"
+    Domain: "DevOps" 
+    Cloud: "AWS"
+    Company: "DVKR Solutions Pvt Ltd"
+  tasks:
+    - name: student details
+      ansible.builtin.debug:
+        msg: "Hello My name is {{ NameOfStudent }}"
+    - name: Qualifocation details
+      ansible.builtin.debug:
+        msg: "My qualification is {{ Qualification }}"
+    - name: Domain expert
+      ansible.builtin.debug:
+        msg: "Expert in {{ Domain }} domain"
+    - name: Cloud experience
+      ansible.builtin.debug:
+        msg: "Have experience in {{ Cloud }} cloud"
+    - name: Working company details
+      ansible.builtin.debug:
+        msg: "Currently working in {{ Company }}"
