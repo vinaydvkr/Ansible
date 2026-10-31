@@ -1,0 +1,12 @@
+- name: demo on vars
+  hosts: local
+  connection: local
+  vars:
+    RestaurantName: Pista House
+    Lunch: Chicken Biryani
+    Quantity: 01
+    Bill: 750
+  tasks:
+    - name: vars demo
+      ansible.builtin.debug:
+        msg: "Hello, Today I went to {{ RestaurantName }} restaurant and had {{ Quantity }} {{ Lunch }} total bill is {{ Bill }}"
