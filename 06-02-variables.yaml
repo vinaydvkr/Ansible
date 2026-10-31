@@ -12,11 +12,11 @@
   
   - name: date of birth is
     ansible.builtin.debug:
-      msg: "My date of birth is  {{ DOB }}"
+      msg: "My date of birth is {{ DOB }}"
 
   - name: Place of birth
     ansible.builtin.debug:
-      msg: "My place og birth is {{ PlaceOfBirth }}"
+      msg: "My place of birth is {{ PlaceOfBirth }}"
 
   
 
