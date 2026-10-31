@@ -1,7 +1,7 @@
 - name: varibales from files
   hosts: local
   connection: local
-  vars:
+  vars_files:
   - course.yaml
 - name: Course details
   ansible.builtin.debug:
