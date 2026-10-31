@@ -1,4 +1,4 @@
-- name: Install Nginx
+- name: Install and start Nginx
   hosts: frontend
   become: true
   tasks:
