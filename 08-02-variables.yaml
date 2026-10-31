@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars_prompt:
-  - name: student name
+  - name: student_name
     prompt: Enter the student name
     private: false
 
@@ -10,11 +10,11 @@
     prompt: Enter DOB of student
     private: false
 
-  - name: Base location
+  - name: Base_location
     prompt: Enter base location
     private: false
   
   tasks:
     - name: enter the details
       ansible.builtin.debug:
-        msg: "Student name is {{ student name }} DOB is {{ DOB }} and the base location is {{ Base location }}"
+        msg: "student name is {{ student_name }} DOB is {{ DOB }} and the base location is {{ Base_location }}"
