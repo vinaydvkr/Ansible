@@ -1,0 +1,16 @@
+- name: variables from promot
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: username
+      prompt: please enter your username
+      private: false
+
+    - name: password
+      prompt: please enter the password
+      private: true
+    tasks:
+      - name: Print the confidential information
+        ansible.builtin.debug:
+         msg: "print {{ username }} and {{ password }}"
+
