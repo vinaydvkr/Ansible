@@ -9,7 +9,7 @@
     - name: password
       prompt: please enter the password
       private: true
-    tasks:
+      tasks:
       - name: Print the confidential information
         ansible.builtin.debug:
          msg: "print {{ username }} and {{ password }}"
