@@ -5,7 +5,7 @@
     vacation: Goa
     ModeOftravel: Flight
     NumberOfPersons: 4
-    NumberOf Days: 5
+    NumberOfDays: 5
     TravelAgency: Pick an trip
     tasks:
       name: Demo on vars
