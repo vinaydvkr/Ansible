@@ -6,4 +6,4 @@
   tasks:
     - name: details fo the students
       ansible.builtin.debug:
-        msg: " Name of the student is {{ studentname }} course opted is {{ course }} and base location is {{ location }}"
+        msg: "Name of the student is {{ studentname }} course opted is {{ course }} and base location is {{ location }}"
