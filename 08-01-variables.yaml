@@ -12,5 +12,5 @@
   tasks:
       - name: Print the confidential information
         ansible.builtin.debug:
-          msg: "print {{ username }} and {{ password }}"
+          msg: "username is {{ username }} and password is {{ password }}"
 
