@@ -6,8 +6,8 @@
     ModeOfTravel: Flight
     NumberOfPersons: 4
     NumberOfDays: 5
-    TravelAgency: Pick an trip
+    TravelAgency: Pick your trip
   tasks:
   - name: Demo on vars
     ansible.builtin.debug:
-      msg: "Hello, I am going on vacation to {{ vacation }} on {{ ModeOfTravel}} number of people are {{ NumberOfPersons }} number of days we have planned is {{ NumberOfDays }} and the trave agency we have opted is {{ TravelAgency }}" 
+      msg: "Hello, I am going on vacation to {{ vacation }} on {{ ModeOfTravel}} and the number of people we are travelling is {{ NumberOfPersons }} number of days we have planned is {{ NumberOfDays }} and the trave agency we have opted is {{ TravelAgency }}" 
