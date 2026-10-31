@@ -1,0 +1,20 @@
+- name: variables on prmopt
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: student name
+    prompt: Enter the student name
+    private: false
+
+  - name: DOB
+    prompt: Enter DOB of student
+    private: false
+
+  - name: Base location
+    prompt: Enter base location
+    private: false
+  
+  tasks:
+    - name: enter the details
+      ansible.builtin.debug:
+        msg: "Student name is {{ student name }} DOB is {{ DOB }} and the base location is {{ Base location }}"
