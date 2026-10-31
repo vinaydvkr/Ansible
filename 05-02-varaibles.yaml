@@ -3,7 +3,7 @@
   connection: local
   vars:
     vacation: Goa
-    ModeOftravel: Flight
+    ModeOfTravel: Flight
     NumberOfPersons: 4
     NumberOfDays: 5
     TravelAgency: Pick an trip
