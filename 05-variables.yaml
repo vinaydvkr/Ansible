@@ -7,5 +7,5 @@
       trainer: Vinay Kumar Reddy DeReddy
       duration: 5 months
 - name: print the vars
-    ansinle.builtin.debug:
+    ansible.builtin.debug:
       msg: "I am learning { course } trainer is  { trainer } duration is {duraion}"
