@@ -11,4 +11,8 @@
       msg: |
         OS_Family: "{{ ansible_facts['os_family'] }}" 
         Python_Version: "{{ ansible_facts['python_version'] }}"    
-        system: "{{ ansible_facts['system']}}"   
+        system: "{{ ansible_facts['system'] }}"   
+        env: "{{ ansible_facts['env']['AWS_DEFAULT_REGION"'] }}"
+
+
+
