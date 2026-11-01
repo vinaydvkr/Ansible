@@ -8,6 +8,6 @@
     NumberOfDays: 5
     TravelAgency: Pick your trip
   tasks:
-  - name: Demo on vars
+  - name: Demo on variables
     ansible.builtin.debug:
       msg: "Hello, I am going on vacation to {{ vacation }} on {{ ModeOfTravel}} and the number of people we are travelling is {{ NumberOfPersons }} number of days we have planned is {{ NumberOfDays }} and the trave agency we have opted is {{ TravelAgency }}" 
