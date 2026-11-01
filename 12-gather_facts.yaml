@@ -5,3 +5,8 @@
   - name: this is for ansible facts
     ansible.builtin.debug:
       msg: "{{ ansible_facts }}"
+
+  - name: gather facts
+    ansible.builtin.debug:
+      msg: |
+          "{{ ansible_facts['distribution'] }}"        
