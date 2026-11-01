@@ -19,7 +19,7 @@
         msg: "I'm expert in {{ Domain }} domain"
     - name: Cloud experience
       ansible.builtin.debug:
-        msg: "I'm having experience in {{ Cloud }} cloud"
+        msg: "I am having experience in {{ Cloud }} cloud"
     - name: Working company details
       ansible.builtin.debug:
         msg: "Currently working in {{ Company }}"
