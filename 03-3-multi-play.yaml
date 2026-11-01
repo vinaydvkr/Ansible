@@ -1,4 +1,4 @@
-- name: Multi Play Task with Paly TAsk And Run
+- name: Multi Play Task with Paly Task and Run
   hosts: local
   connection: local
   tasks:
