@@ -9,8 +9,8 @@
     - name: Details form facts
       ansible.builtin.debug:
         msg: |
-          "{{ ansible_facts['architecture'] }}"
-          "{{ ansible_facts['bios_vendor'] }}"
-          "{{ ansible_facts['bios_version'] }}"
-          "{{ ansible_facts['board_asset_tag'] }}"
+          architevture: "{{ ansible_facts['architecture'] }}"
+          bios_vendor: "{{ ansible_facts['bios_vendor'] }}"
+          bios_version: "{{ ansible_facts['bios_version'] }}"
+          board_asset_tag: "{{ ansible_facts['board_asset_tag'] }}"
 
