@@ -17,4 +17,4 @@
   tasks:
     - name: enter the details
       ansible.builtin.debug:
-        msg: "student name is {{ student_name }} DOB is {{ DOB }} and the base location is {{ Base_location }}"
+        msg: "student name is {{ student_name }} DOB is {{ DOB }} and base location is {{ Base_location }}"
