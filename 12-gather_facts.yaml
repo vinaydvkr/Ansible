@@ -9,4 +9,5 @@
   - name: gather facts
     ansible.builtin.debug:
       msg: |
-        OS_Family: "{{ ansible_facts['os_family'] }}"        
+        OS_Family: "{{ ansible_facts['os_family'] }}" 
+        Python_Version: "{{ ansible_facts['python_version'] }}"       
