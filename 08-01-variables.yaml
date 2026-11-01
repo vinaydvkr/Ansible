@@ -1,4 +1,4 @@
-- name: variables from promot
+- name: variables from prompt
   hosts: local
   connection: local
   vars_prompt:
