@@ -1,4 +1,4 @@
-- name: This play is for ping demo
+- name: This play is for the ping demo
   hosts: localhost
   connection: local
   tasks:
