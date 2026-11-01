@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    person_name: Vinay Kumar Reddy DeReddy
+    person_name: Vinay Kumar Reddy.DeReddy
   tasks:
   - name: print greeting
     debug:
