@@ -12,5 +12,5 @@
           "{{ ansible_facts['architecture'] }}"
           "{{ ansible_facts['bios_vendor'] }}"
           "{{ ansible_facts['bios_version'] }}"
-          "{{ ansible_facts['oard_asset_tag'] }}"
+          "{{ ansible_facts['board_asset_tag'] }}"
 
