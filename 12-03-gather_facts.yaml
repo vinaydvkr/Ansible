@@ -1,0 +1,16 @@
+- name: Gather facts demo
+  hosts: local
+  connection: local
+  tasks:
+    - name: gather facts
+      ansible.builtin.debug:
+        msg: "{{ ansible_facts }}"
+
+    - name: Details form facts
+      ansible.builtin.debug:
+        msg: |
+          "{{ ansible_facts['architecture'] }}"
+          "{{ ansible_facts['bios_vendor'] }}"
+          "{{ ansible_facts['bios_version'] }}"
+          "{{ ansible_facts['oard_asset_tag'] }}"
+
