@@ -9,4 +9,4 @@
   - name: gather facts
     ansible.builtin.debug:
       msg: |
-          "{{ansible_facts['distribution']}}"        
+          "{{ansible_facts['os_family']}}"        
