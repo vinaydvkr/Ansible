@@ -1,4 +1,4 @@
-- name: Play-1 nn
+- name: Play-1 
   hosts: localhost
   connection: local
   tasks:
