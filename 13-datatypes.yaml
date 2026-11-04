@@ -6,14 +6,14 @@
     duration_of_course: 120 days # number
     live_sessions: true # boolean
     topics: # list
-      - Linux
-      - Shell
-      - Ansible
-      - Terroform
-      - GitHub
-      - Docker
-      - Kubernetis
-      - AWS Cloud
+    - Linux
+    - Shell
+    - Ansible
+    - Terroform
+    - GitHub
+    - Docker
+    - Kubernetis
+    - AWS Cloud
     tranier details: #dictionary/map
       trainer: Vinay Kumar reddy DeReddy
       monts: 4 months
