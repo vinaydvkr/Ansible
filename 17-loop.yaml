@@ -5,7 +5,7 @@
   tasks:
     - name: Install multiple packages
       ansible.builtin.apt:
-        msg: "{{ item }}"
+        name: "{{ item }}"
         state: present
       loop:
         - git
