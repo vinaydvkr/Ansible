@@ -26,5 +26,5 @@
         "{{ duration_of_course }}"
         "{{ ive_sessions }}"
         "{{ topics }}"
-        "{{ tranier details }}"
+        "{{ tranier_details }}"
         "{{ exact_duration_months }}"
