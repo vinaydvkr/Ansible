@@ -21,7 +21,7 @@
       ansible.builtin.debug:
         msg:
           Name of the university: "{{ University_Name }}"
-          Are admissions open: "{{ admission_Open }}"
+          Are admissions open: "{{ Admission_Open }}"
           Number_Of_Students: "{{ Number_Of_Students }}"
           Courses_Available: "{{ Courses_Available }}"
           Univeristy_Address: "{{  Univeristy_Details }}"
