@@ -1,0 +1,18 @@
+- name: demo on loops
+  hosts: local
+  connectipon: local
+  become: yes
+  vars: 
+    packages:
+    -  { name: 'git' , state: 'present'}
+    -  { name: 'curl' , state: 'absent'}
+    -  { name:'tmux' , state: 'present'}
+    -  { name:'net-tools' , state: 'absent'}
+    -  { name:'mysql' , state: 'present'}
+    tasks:
+      - name: Install the packages
+        ansible.builtin.package:
+          name: "{{ name.item }}"
+          state: "{{ name.item }}"
+        loop: "{{ packages }}"  
+
