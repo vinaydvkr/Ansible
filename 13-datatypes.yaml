@@ -1,0 +1,28 @@
+- name: demo on data types
+  tasks: local
+  connction: local
+  vars:
+    Course: "AIOps with DevSecOps on AWS Clous" #string
+    duration_of_course: 120 days # number
+    live_sessions: true # boolean
+    topics: # list
+      - Linux
+      - Shell
+      - Ansible
+      - Terroform
+      - GitHub
+      - Docker
+      - Kubernetis
+    tranier details: #dictionary/map
+      - trainer: Vinay Kumar reddy DeReddy
+      - monts: 4 months
+    exact_duration_months: 4.5 months
+- name: printing the data types
+  ansible.builtin.debug:
+    msg: |
+      "{{ Course }}"
+      "{{ duration_of_course }}"
+      "{{ ive_sessions }}"
+      "{{ topics }}"
+      "{{ tranier details }}"
+      "{{ exact_duration_months }}"
