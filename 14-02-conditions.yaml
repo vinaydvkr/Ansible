@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    given number: 13
+    given_number: 13
   tasks:
     - name: even number
       ansible.builtin.debug:
