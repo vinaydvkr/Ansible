@@ -24,7 +24,7 @@
       msg: |
         "{{ course }}"
         "{{ duration_of_course }}"
-        "{{ ive_sessions }}"
+        "{{ live_sessions }}"
         "{{ topics }}"
         "{{ tranier_details }}"
         "{{ exact_duration_months }}"
