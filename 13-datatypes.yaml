@@ -15,8 +15,8 @@
       - Kubernetis
       - AWS Cloud
     tranier details: #dictionary/map
-      - trainer: Vinay Kumar reddy DeReddy
-      - monts: 4 months
+      trainer: Vinay Kumar reddy DeReddy
+      monts: 4 months
     exact_duration_months: 4.5 months
 - name: printing the data types
   ansible.builtin.debug:
