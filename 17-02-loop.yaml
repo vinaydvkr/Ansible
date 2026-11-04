@@ -1,0 +1,19 @@
+- name: demo on loop
+  hosts: local
+  connection: local
+  become: true
+  vars:
+    packages:
+    - git
+    - curl
+    - tmux
+    - nginx
+    - net-tools
+    - mysql
+  tasks:
+    - name: install the packages
+      state: present
+        name: "{{ item }}"
+      loop:
+        "{{ packages }}"
+    
