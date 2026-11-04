@@ -1,5 +1,5 @@
 - name: demo on data types
-  tasks: local
+  hosts: local
   connection: local
   vars:
     course: AIOps with DevSecOps on AWS Clous #string
@@ -18,12 +18,13 @@
       trainer: Vinay Kumar reddy DeReddy
       monts: 4 months
     exact_duration_months: 4.5 months
-- name: printing the data types
-  ansible.builtin.debug:
-    msg: |
-      "{{ Course }}"
-      "{{ duration_of_course }}"
-      "{{ ive_sessions }}"
-      "{{ topics }}"
-      "{{ tranier details }}"
-      "{{ exact_duration_months }}"
+  tasks:
+  - name: printing the data types
+    ansible.builtin.debug:
+      msg: |
+        "{{ Course }}"
+        "{{ duration_of_course }}"
+        "{{ ive_sessions }}"
+        "{{ topics }}"
+        "{{ tranier details }}"
+        "{{ exact_duration_months }}"
