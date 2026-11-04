@@ -15,7 +15,7 @@
     - Kubernetis
     - AWS Cloud
     tranier_details: #dictionary/map
-      trainer: Vinay Kumar reddy DeReddy
+      trainer_name: Vinay Kumar reddy DeReddy
       months: 4 months
     exact_duration_months: 4.5 months
   tasks:
