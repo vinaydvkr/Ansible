@@ -12,5 +12,5 @@
         - curl
         - tmux
         - htop
-        - net-tool
-        - mysql-client
+        - net tool
+        - mysql client
