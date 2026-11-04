@@ -4,7 +4,7 @@
   become: yes
   tasks:
     - name: Install multiple packages
-      ansible.builtin.apt:
+      ansible.builtin.dnf:
         name: "{{ item }}"
         state: present
       loop:
