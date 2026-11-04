@@ -1,6 +1,6 @@
 - name: demo on loops
   hosts: local
-  connectipon: local
+  connection: local
   become: yes
   vars: 
     packages:
