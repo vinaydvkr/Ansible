@@ -1,6 +1,6 @@
 - name: demo on data types
   tasks: local
-  connction: local
+  connection: local
   vars:
     Course: "AIOps with DevSecOps on AWS Clous" #string
     duration_of_course: 120 days # number
