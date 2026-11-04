@@ -10,9 +10,9 @@
     -  { name:'net-tools' , state: 'absent'}
     -  { name:'mysql' , state: 'present'}
   tasks:
-  - name: Install the packages
-    ansible.builtin.package:
-      name: "{{ name.item }}"
-      state: "{{ name.item }}"
-    loop: "{{ packages }}"  
+    - name: Install the packages
+      ansible.builtin.package:
+        name: "{{ name.item }}"
+        state: "{{ name.item }}"
+      loop: "{{ packages }}"  
 
