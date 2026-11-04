@@ -1,0 +1,28 @@
+- name: demo on data types
+  hosts: local
+  connection: local
+  vars:
+    University_Name: VIT University #string
+    Admission_Open: yes # boolean
+    Number_Of_Students: 45000  #number
+    Courses_Available: # list
+    - AI ML
+    - ECE
+    - CSE
+    - Cyber Security
+    - EEE
+    - Mech
+    - Civil
+    Univeristy_Details: # dictionary/map
+      University_Location: Vellore
+      Address: Vellore, TamilNadu
+  tasks:
+    - name: print the details
+      ansible.builtin.debug:
+        msg:
+          Name of the university: "{{ University_Name }}"
+          Are admissions open: "{{ dmission_Open }}"
+          Number_Of_Students: "{{ Number_Of_Students }}"
+          Courses_Available: "{{ Courses_Available }}"
+          Univeristy_Address: "{{  Univeristy_Details }}"
+
