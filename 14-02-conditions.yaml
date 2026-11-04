@@ -1,0 +1,17 @@
+- name: demo on contions # when
+  hosts: local
+  connection: local
+  vars:
+    given number: 13
+  tasks:
+    - name: even number
+      ansible.builtin.debug:
+        msg: Given number {{ given_number }} is even
+      when: given_number % 2 == 0
+    - name: odd number
+      ansible.builtin.debug:
+        msg: Given number {{ given_number }} is odd
+      when: given_number % 2 != 0  
+
+
+  

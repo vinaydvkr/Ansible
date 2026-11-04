@@ -1,4 +1,4 @@
-- name: demo on conditions
+- name: demo on conditions # when
   hosts: local
   connection: local
   vars: 
