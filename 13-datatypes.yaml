@@ -22,7 +22,7 @@
   - name: printing the data types
     ansible.builtin.debug:
       msg: |
-        "{{ Course }}"
+        "{{ course }}"
         "{{ duration_of_course }}"
         "{{ ive_sessions }}"
         "{{ topics }}"
