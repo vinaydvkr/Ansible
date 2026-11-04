@@ -2,7 +2,7 @@
   tasks: local
   connection: local
   vars:
-    course: "AIOps with DevSecOps on AWS Clous" #string
+    course: AIOps with DevSecOps on AWS Clous #string
     duration_of_course: 120 days # number
     live_sessions: true # boolean
     topics: # list
