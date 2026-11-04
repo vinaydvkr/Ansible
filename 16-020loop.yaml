@@ -1,0 +1,12 @@
+- name: demo on loop
+  hosts: local
+  connection: local
+  tasks:
+    - name: loop
+      ansible.builtin.debug:
+        msg: "{{ item }}"
+      loop:
+        - India
+        - Russia
+        - USA
+        
