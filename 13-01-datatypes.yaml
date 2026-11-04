@@ -22,9 +22,9 @@
   - name: printing the data types
     ansible.builtin.debug:
       msg: |
-        "{{ course }}"
-        "{{ duration_of_course }}"
-        "{{ live_sessions }}"
-        "{{ topics }}"
-        "{{ tranier_details }}"
-        "{{ exact_duration_months }}"
+        Course details are: "{{ course }}"
+        Duration of the course is: "{{ duration_of_course }}"
+        is the seesion live: "{{ live_sessions }}"
+        List if the topics are: "{{ topics }}"
+        Trainer details are: "{{ tranier_details }}"
+        Exact duration of course in months: "{{ exact_duration_months }}"
