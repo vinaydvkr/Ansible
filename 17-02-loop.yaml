@@ -12,7 +12,8 @@
     - mysql
   tasks:
     - name: install the packages
-      state: present
+      ansible.builtin.package: 
+        state: present
         name: " {{ item }} "
       loop:
         "{{ packages }}"
