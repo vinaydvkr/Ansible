@@ -16,7 +16,7 @@
     - AWS Cloud
     tranier_details: #dictionary/map
       trainer: Vinay Kumar reddy DeReddy
-      monts: 4 months
+      months: 4 months
     exact_duration_months: 4.5 months
   tasks:
   - name: printing the data types
